@@ -1,0 +1,571 @@
+/* הגדרות כלליות */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to bottom, #e3f2fd, #b1d0e8); /* מעבר צבעים */
+    color: #003366;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    direction: rtl;
+    text-align: center;
+}
+
+/* מיכל ראשי */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/* כותרת ראשית */
+.header h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    color: #00509e;
+}
+
+.header h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.header .highlight {
+    color: #007acc;
+    font-weight: bold;
+}
+
+/* תפריט */
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 400px;
+}
+
+.menu-btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-btn:hover {
+    background-color: #00509e;
+    transform: scale(1.05);
+}
+
+.menu-btn:active {
+    background-color: #003366;
+    transform: scale(0.98);
+}
+
+/* פוטר */
+.footer {
+    background-color: #00509e;
+    color: white;
+    padding: 10px 0;
+    font-size: 0.9rem;
+}
+
+/* עיצוב עבור דף login */
+.login-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 50px;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #00509e;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #003366;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #003366;
+}
+
+.login-container a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
+
+.login-btn, .google-login {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-weight: bold;
+    border: 2px solid #007acc;
+    border-radius: 5px;
+    background-color: white;
+    color: #007acc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-btn:hover, .google-login:hover {
+    background-color: #007acc;
+    color: white;
+}
+
+.google-login {
+    border-color: #f4b400;
+    color: #f4b400;
+}
+
+.google-login:hover {
+    background-color: #f4b400;
+    color: white;
+}
+
+/* עיצוב דף יצירת חשבון */
+.signup-container {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 50px;
+    width: 90%;
+    max-width: 450px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-container h1 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #00509e;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+/* עיצוב דף אזור אישי */
+.personal-area-container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #007acc;
+    margin-bottom: 20px;
+}
+
+.menu-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu-btn {
+    background-color: #007acc;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.3s ease;
+}
+
+.menu-btn span {
+    font-size: 1.5rem;
+}
+
+.menu-btn:hover {
+    background-color: #00509e;
+    transform: scale(1.05);
+}
+
+/* עיצוב דף קביעת תור */
+.appointment-container {
+    text-align: center;
+    width: 90%;
+    max-width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    padding: 50px;
+}
+
+header h1 {
+    font-size: 2rem;
+    color: #00509e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color: #003366;
+}
+
+.input-group input,
+.input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #007acc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* כפתורים קביעת תור */
+.confirm-btn,
+.back-btn {
+    width: 48%;
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.confirm-btn {
+    background-color: #007acc;
+    color: white;
+    border: none;
+}
+
+.confirm-btn:hover {
+    background-color: #00509e;
+}
+
+.back-btn {
+    background-color: white;
+    color: #007acc;
+    border: 2px solid #007acc;
+}
+
+.back-btn:hover {
+    background-color: #007acc;
+    color: white;
+}
+/* רשת הכרטיסים */
+.team-grid {
+    display: flex;
+    flex-wrap: wrap; /* מאפשר שבירת שורה אם אין מקום */
+    justify-content: space-evenly; /* מרווחים שווים בין הכרטיסים */
+    gap: 20px; /* מרווח בין הכרטיסים */
+    margin-top: 20px;
+}
+
+/* כרטיס הרופא */
+.doctor-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 200px; /* רוחב קבוע לכל כרטיס */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.doctor-card:hover {
+    transform: scale(1.1); /* הגדלה בעת ריחוף */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* הצללה חזקה יותר */
+}
+
+/* תמונות */
+.doctor-card img {
+    width: 100%; /* התאמה לכרטיס */
+    height: auto; /* שמירה על יחס גובה-רוחב */
+    border-radius: 5px; /* פינות מעוגלות קלות */
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.doctor-card img:hover {
+    transform: rotate(5deg) scale(1.05); /* אנימציה לריחוף */
+    filter: brightness(1.2); /* הארה */
+}
+
+/* כותרת */
+.doctor-card h3 {
+    font-size: 1.2rem;
+    color: #00509e;
+    margin-top: 10px;
+}
+
+/* טקסט תיאור */
+.doctor-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out; /* אנימציה */
+}
+
+.home-logo {
+    width: 160px; /* גודל התמונה */
+    height: auto;
+    display: inline-block;
+    animation: bounce 2s infinite; /* אנימציה קופצנית */
+}
+
+/* אנימציה להופעת התמונה */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* אנימציה לקפיצה עדינה */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #e3f2fd;
+    color: #003366;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* מבטיח שהחלק העליון והתחתון יישארו במקומם */
+    height: 100vh;
+    text-align: center;
+}
+
+header {
+    margin-top: 20px;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #007acc;
+    margin-bottom: 10px;
+}
+
+footer {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.modal {
+    position: fixed;
+    top: 50%; /* ממקם את המלבן במרכז המסך אנכית */
+    left: 50%; /* ממקם את המלבן במרכז המסך אופקית */
+    transform: translate(-45%, -45%); /* מבטיח שהמלבן ימוקם במדויק במרכז */
+    width: 500px; /* הגדלת הרוחב של המלבן */
+    height: 320px; /* הגדלת הגובה של המלבן */
+    padding: 20px; /* פדינג פנימי יותר קטן */
+    background: #ffffff; /* צבע רקע לבן */
+    border-radius: 8px; /* קיבולות מעוגלות */
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* צל עדין יותר */
+    z-index: 1000; /* זכות על היתר */
+}
+
+/* עדכון עיצוב הכותרות בחלון המודאל */
+.modal h3 {
+    margin-bottom: 20px;
+    color: #00509e;
+    font-size: 1.4rem;
+}
+
+/* עדכון עיצוב הטופס בחלון המודאל */
+#updateForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#updateForm label {
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#updateForm input[type="date"],
+#updateForm input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* עיצוב כפתורי הפעולה בחלון המודאל */
+#updateForm button {
+    width: auto;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#updateForm button:hover {
+    background-color: #0056b3;
+}
+
+#updateForm .cancel-btn {
+    background-color: #f44336;
+}
+
+#updateForm .cancel-btn:hover {
+    background-color: #d32f2f;
+}
+/* עיצוב הכפתורים בחלק העליון של החלון */
+.top-buttons {
+    display: flex;
+    justify-content: space-between; /* מרווח אחיד בין הכפתורים */
+    padding: 10px 20px; /* פדינג פנימי לאזור הכפתורים */
+    margin-bottom: 20px; /* מרווח מתחת לכפתורים לפני תוכן העמוד */
+}
+
+.previous-appointments-btn,
+.next-appointment-btn {
+    flex: 1; /* שווה גודל ותפיסת מקום */
+    text-align: center; /* מרכז את הטקסט בכפתור */
+    padding: 10px 0; /* פדינג אנכי */
+    margin: 0 10px; /* מרווח בין הכפתורים */
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.previous-appointments-btn:hover,
+.next-appointment-btn:hover {
+    background-color: #0056b3; /* צבע רקע כהה יותר בריחוף */
+}
+.back-btn {
+    background-color: #f44336; /* צבע אדום */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    background-color: #d32f2f; /* גוון אדום כהה יותר בריחוף */
+}
+/* הגדרות כלליות ל-Navigation Bar */
+.navbar {
+    background-color: #00509e; /* כחול כהה */
+    color: white;
+    width: 200px; /* רוחב קבוע ל-Navigation Bar */
+    height: 100vh; /* גובה מלא */
+    position: fixed; /* תקוע בצד השמאלי */
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* מאזן את הפריטים אנכית */
+    justify-content: start;
+    padding-top: 20px; /* מרווח בראש ה-Navigation Bar */
+    font-family: "Arial", sans-serif;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    padding: 15px 10px; /* פדינג נוח לפריטים בתפריט */
+    border-bottom: 1px solid #03396c; /* קו מפריד בין הקישורים */
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    display: block; /* מאפשר ריחוף על כל השטח */
+    transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+    background-color: #03396c; /* רקע כהה יותר בריחוף */
+}
+
+/* עיצוב מותאם למכשירים ניידים */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; /* הופך לתפריט אופקי במכשירים ניידים */
+        height: auto;
+        position: relative; /* לא תקוע */
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .nav-links li {
+        border-bottom: none; /* מסיר את הקווים המפרידים */
+    }
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ברוכים הבאים</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='3D.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo-container">
+                <img src="{{ url_for('static', filename='image/home-banner.jpg') }}" alt="לוגו מרפאת 3DSMILE" class="home-logo">
+            </div>
+            <h1>ברוכים הבאים</h1>
+            <h2>למרפאת <span class="highlight">3DSMILE</span></h2>
+        </header>
+        <main>
+            <div class="menu">
+                <a href="{{ url_for('login') }}" class="menu-btn">כניסה למערכת</a>
+                <a href="{{ url_for('callus') }}" class="menu-btn">צור קשר</a>
+                <a href="{{ url_for('our_doctors') }}" class="menu-btn">קצת עלינו</a>
+            </div>
+        </main>
+        <footer>
+            <p>© 2025 מרפאת 3DSMILE. כל הזכויות שמורות.</p>
+        </footer>
+    </div>
+</body>
+</html>

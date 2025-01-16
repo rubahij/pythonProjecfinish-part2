@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>היסטוריית הטיפולים שלי</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='3D.css') }}">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="/">דף הבית</a></li>
+            <li><a href="/callus">צור קשר</a></li>
+            <li><a href="/ourdoctors">קצת עלינו</a></li>
+        </ul>
+    </nav>
+
+    <div class="history-container">
+        <header>
+            <h1>היסטוריית הטיפולים שלי</h1>
+            <div class="top-buttons">
+                <button type="button" class="previous-appointments-btn">תורים קודמים</button>
+                <button type="button" class="next-appointment-btn">תור הבא</button>
+            </div>
+        </header>
+        <footer>
+            <button class="back-btn" onclick="goBack()">חזרה</button>
+        </footer>
+    </div>
+    <div id="updateModal" class="modal hidden">
+        <div class="modal-content">
+            <h3>עדכון תור</h3>
+            <form id="updateForm">
+                <label for="updateDate">תאריך חדש</label>
+                <input type="date" id="updateDate" required>
+                <label for="updateTime">שעה חדשה</label>
+                <input type="time" id="updateTime" required>
+                <button type="submit" class="confirm-btn">עדכון</button>
+                <button type="button" class="back-btn" onclick="goBack()">חזרה</button>
+            </form>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='3D.js') }}"></script>
+</body>
+</html>
